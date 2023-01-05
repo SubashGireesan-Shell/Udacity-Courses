@@ -30,6 +30,8 @@ Data files:
 - Data/reviews.csv - Detailed reviews for the listings
 - Data/reviews_summary.csv - Details about listing and the date of review
 
+calendar.csv and reviews.csv are in their corresponding zip format files. Please unzip before using the Jupyter Notebook. 
+
 Analysis and modeling file:
 
 - Notebookds/Amsterdam_Airbnb.ipynb - Jupyter notebook detailing the CRISP-DM process followed in the project along with the analysis and results
@@ -48,7 +50,7 @@ Subash Gireesan, Data Scientist, Shell Projects & Technologies
 
 ## License
 
-This project is licensed under the [NAME HERE] License - see the LICENSE.md file for details
+This project is licensed under the MIT License - see the LICENSE.md file for details
 
 ## Acknowledgments
 
