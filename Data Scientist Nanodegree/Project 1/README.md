@@ -2,6 +2,8 @@
 
 In this project, we analyze the airbnb listings in Amsterdam for the year 2022-2023. 
 
+We have written a medium article that highlights the most importan results from this project. The article can be found [here](https://medium.com/@subash.gireesan/to-airbnb-or-not-the-amsterdam-story-c1d92b06f2c5)
+
 ## Motivation
 
 This project is a part of the Data Scientist Nanodegree program by Udacity. Here we use the CRoss Industry Standard Process for Data Mining (CRISP-DM) process to analyze the trends in the prices, reviews and availability of the various Airbnb listings in Amsterdam. 
@@ -34,7 +36,7 @@ calendar.csv and reviews.csv are in their corresponding zip format files. Please
 
 Analysis and modeling file:
 
-- Notebookds/Amsterdam_Airbnb.ipynb - Jupyter notebook detailing the CRISP-DM process followed in the project along with the analysis and results
+- Notebooks/Amsterdam_Airbnb.ipynb - Jupyter notebook detailing the CRISP-DM process followed in the project along with the analysis and results
 
 ### Dependencies
 
@@ -47,10 +49,6 @@ Analysis and modeling file:
 Contributors names and contact info
 
 Subash Gireesan, Data Scientist, Shell Projects & Technologies
-
-## License
-
-This project is licensed under the MIT License - see the LICENSE.md file for details
 
 ## Acknowledgments
 
