@@ -87,6 +87,9 @@ def main():
     if len(sys.argv) == 4:
 
         messages_filepath, categories_filepath, database_filepath = sys.argv[1:]
+        # messages_filepath = 'disaster_messages.csv'
+        # categories_filepath = 'disaster_categories.csv'
+        # database_filepath = 'YourDatabaseName.db'
 
         print('Loading data...\n    MESSAGES: {}\n    CATEGORIES: {}'
               .format(messages_filepath, categories_filepath))
