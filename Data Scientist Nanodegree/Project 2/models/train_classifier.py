@@ -40,11 +40,11 @@ def load_data(database_filepath):
     Function to load data from database
     
     Arguments:
-    database_filepath: Path to SQL database
+        database_filepath: Path to SQL database
     Returns:
-    X - Feature dataframe
-    y - Label dataframe
-    category_names - List of unique categories
+        X - Feature dataframe
+        y - Label dataframe
+        category_names - List of unique categories
     '''
     
     engine = create_engine('sqlite:///'+database_filepath)
@@ -60,9 +60,9 @@ def tokenize(text):
     Function for tokenizing the text data
 
     Arguments:
-    text - List of text messages that are to be tokenized
+        text - List of text messages that are to be tokenized
     Returns:
-    clean_tokens - List of cleaned tokens
+        clean_tokens - List of cleaned tokens
     '''
     url_regex = 'http[s]?://(?:[a-zA-Z]|[0-9]|[$-_@.&+]|[!*\(\),]|(?:%[0-9a-fA-F][0-9a-fA-F]))+'
     detected_urls = re.findall(url_regex, text)
@@ -107,9 +107,9 @@ def build_model():
     Function for building model
 
     Argument -  
-    None
+        None
     Returns - 
-    A Scikit ML Pipeline that process text messages and apply a classifier
+        A Scikit ML Pipeline that process text messages and apply a classifier
     '''
     model = Pipeline([
         ('features', FeatureUnion([
@@ -133,12 +133,12 @@ def evaluate_model(model, X_test, y_test, category_names):
     Function to evaluate the model
 
     Arguments: 
-    model - ML pipeline
-    X_test - Test features
-    y_test - Test labels
-    category_names - Names of the labels
+        model - ML pipeline
+        X_test - Test features
+        y_test - Test labels
+        category_names - Names of the labels
     Returns:
-    None
+        None
     '''
     y_pred = model.predict(X_test)
     for i, col in enumerate(category_names):
@@ -151,10 +151,11 @@ def save_model(model, model_filepath):
     Function to save a trained model as Pickle file, to be loaded later.
     
     Arguments:
-    model - GridSearchCV or Scikit Pipelin object
-    model_filepath - Destination path to save .pkl file
+        model - GridSearchCV or Scikit Pipelin object
+        model_filepath - Destination path to save .pkl file
     Returns:
-    None    '''
+        None    
+    '''
         
     filename = model_filepath
     pickle.dump(model, open(filename, 'wb'))
@@ -168,12 +169,6 @@ def main():
         2) Training ML model on training set
         3) Estimating model performance on test set
         4) Saving the trained model as Pickle
-        
-    Args:
-        None
-        
-    Returns:
-        None
     '''
     if len(sys.argv) == 3:
         database_filepath, model_filepath = sys.argv[1:]

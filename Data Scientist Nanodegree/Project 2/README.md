@@ -66,6 +66,7 @@ Subash Gireesan
 
 ## Acknoweledgment
 
+* Lecture notes for the Udacity Data Science Nanodegree
 * Credit must be given to Figure-8 for the dataset. 
 * Authors of the following projects for inspiration: 
     - https://github.com/matteobonanomi/dsnd-disaster-response
