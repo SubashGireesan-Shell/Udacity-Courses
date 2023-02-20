@@ -2,7 +2,7 @@
 
 In this project, we have built a NLP tool to classify real messages that are sent during disaster such that the messages can be send to an appropriate disaster relief agency in real time. We also have included a web app where an emergency worker can input a new message and get classification results in several categories.
 
-### Motivation
+## Motivation
 
 This project is a part of the Data Scientist Nanodegree program by Udacity. The initial dataset contains pre-labelled tweet and messages from real-life disasters. The aim of this project is to build a Natural Language Processing tool that categorize messages. 
 
@@ -14,10 +14,9 @@ The project follows these sequential steps:
 2) ML Pipeline to train a model that can classify text messages into different categories
 3) Web App to visualize model results in real time
 
-### Getting Started
+## Getting Started
 
-
-#### Folder Structure 
+### Folder Structure 
 ```
 - app
 | - template
@@ -61,11 +60,11 @@ The project follows these sequential steps:
 
 4. Click the `PREVIEW` button to open the homepage
 
-### Authors
+## Authors
 
 Subash Gireesan
 
-### Acknoweledgment
+## Acknoweledgment
 
 * Credit must be given to Figure-8 for the dataset. 
 * Authors of the following projects for inspiration: 
