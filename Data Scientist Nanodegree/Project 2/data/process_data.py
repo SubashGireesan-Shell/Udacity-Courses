@@ -25,10 +25,10 @@ def load_data(messages_filepath, categories_filepath):
     Function to load messages and categories data
     
     Arguments:
-    messages_filepath - File path to messages csv file
-    categories_filepath - File path to categories csv file
+        messages_filepath - File path to messages csv file
+        categories_filepath - File path to categories csv file
     Returns:
-    df - Merged dataframe with messages and categories data
+        df - Merged dataframe with messages and categories data
     '''
 
     messages = pd.read_csv(messages_filepath)
@@ -42,9 +42,9 @@ def clean_data(df):
     Function to clean the dataframe
     
     Arguments: 
-    df - Pandas dataframe with raw data
+        df - Pandas dataframe with raw data
     Returns:
-    df - Cleaned pandas dataframe
+        df - Cleaned pandas dataframe
     '''
 
     categories = df.categories.str.split(pat=';', expand=True)
@@ -54,6 +54,7 @@ def clean_data(df):
     for column in categories:
         categories[column] = categories[column].str[-1]
         categories[column] = categories[column].astype(np.int)
+        categories[column] = categories[column].replace(2, 0)
     df = df.drop('categories', axis=1)
     df = pd.concat([df,categories], axis=1)
     df = df.drop_duplicates()
@@ -65,14 +66,14 @@ def save_data(df, database_filename):
     Function to save data
     
     Arguments:
-    df - Dataframe object
-    database_filename - Path to database file
+        df - Dataframe object
+        database_filename - Path to database file
     Returns:
-    None
+        None
     '''
 
     engine = create_engine('sqlite:///'+ database_filename)
-    df.to_sql('df', engine, index=False)
+    df.to_sql('df', engine, index=False, if_exists='replace')
     pass  
 
 

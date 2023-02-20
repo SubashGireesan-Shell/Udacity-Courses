@@ -30,6 +30,9 @@ from sklearn.pipeline import Pipeline, FeatureUnion
 from sklearn.metrics import fbeta_score, classification_report
 from scipy.stats.mstats import gmean
 from sklearn.metrics import confusion_matrix
+from sklearn.ensemble import RandomForestClassifier
+
+from sklearn.model_selection import GridSearchCV
 
 nltk.download(['punkt', 'wordnet', 'averaged_perceptron_tagger'])
 nltk.download('omw-1.4')
@@ -122,10 +125,17 @@ def build_model():
             ('starting_verb', StartingVerbExtractor())
         ])),
 
-        ('clf', MultiOutputClassifier(AdaBoostClassifier()))
+        ('clf', MultiOutputClassifier(RandomForestClassifier()))
     ])
 
-    return model
+    parameters = {
+        'clf__estimator__n_estimators': [10, 50],
+        'clf__estimator__min_samples_split': [2, 3]
+                    }
+    
+    cv = GridSearchCV(model, param_grid=parameters)
+
+    return cv
 
 # Evaluate model
 def evaluate_model(model, X_test, y_test, category_names):
