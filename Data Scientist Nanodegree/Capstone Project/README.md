@@ -37,4 +37,7 @@ Subash Gireesan
 ## Acknoweledgment
 
 * Lecture notes for the Udacity Data Science Nanodegree
-* 
+* Authors of the following projects for inspiration: 
+    - https://www.kaggle.com/code/robikscube/time-series-forecasting-with-machine-learning-yt
+    - https://www.kaggle.com/code/robikscube/time-series-forecasting-with-prophet?scriptVersionId=26595661
+* Rob Mulla on Kaggle for the dataset
