@@ -1,15 +1,18 @@
-# Capostone Project
+# Unlocking Tomorrow's Power: The Art of Energy Demand Forecasting 
+Data Science Nanodegree Capstone Project Report
 
 ## Motivation
 
-This project is a part of the Data Scientist Nanodegree program by Udacity. 
+This capstone project is a part of the Data Scientist Nanodegree program by Udacity. The aim of this project is to test the feasibility of using XGBoost for energy demand forecasting. The results have been compared with a simple baseline model. 
+
+The dataset used for this project can be found here: [Hourly Energy Consumption Dataset](https://www.kaggle.com/datasets/robikscube/hourly-energy-consumption)
 
 ## Getting Started
 
 ### Folder Structure 
 ```
 - data
-| - articles_community.csv # Dataset with interaction of a particular user with an article
+| - energy_dataset.csv # Dataset with estimated energy consumption in 
 | - user-item-interactions.csv  # Dataset with details about the articles
 - Recommendations_with_IBM.ipynb # Main Jupyter Notebook
 - project_tests.py # Python script for testing certain exercises in the project
