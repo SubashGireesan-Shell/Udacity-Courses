@@ -12,17 +12,22 @@ The dataset used for this project can be found here: [Hourly Energy Consumption 
 ### Folder Structure 
 ```
 - data
-| - energy_dataset.csv # Dataset with estimated energy consumption in 
-| - user-item-interactions.csv  # Dataset with details about the articles
-- Recommendations_with_IBM.ipynb # Main Jupyter Notebook
-- project_tests.py # Python script for testing certain exercises in the project
+| - energy_dataset.csv # Dataset with estimated energy consumption in MW
+- notebook
+| - Energy Demand Forecasting.ipynb # Main Jupyter Notebook
+- Capstone Project Report.pdf # Final project report explaining the problem statement, approach, results etc
 - README.md
 ```
 
 ### Dependencies
 
 * Python 3.9.7 with Jupyter Notebook
-* Machine Learning Libraries: NumPy, SciPy, Pandas, Sciki-Learn
+* Machine Learning Libraries: NumPy, SciPy, Pandas, Sciki-Learn, Seaborn, XGBoost
+
+
+## Deliverables
+
+The final project report for this work can be found here: 
 
 
 ## Authors
