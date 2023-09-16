@@ -27,7 +27,7 @@ The dataset used for this project can be found here: [Hourly Energy Consumption 
 
 ## Deliverables
 
-The final project report for this work can be found here: 
+The final project report for this work can be found here: Capstone Project Report.pdf
 
 
 ## Authors
@@ -39,5 +39,8 @@ Subash Gireesan
 * Lecture notes for the Udacity Data Science Nanodegree
 * Authors of the following projects for inspiration: 
     - https://www.kaggle.com/code/robikscube/time-series-forecasting-with-machine-learning-yt
-    - https://www.kaggle.com/code/robikscube/time-series-forecasting-with-prophet?scriptVersionId=26595661
+    - https://www.kaggle.com/code/robikscube/time-series-forecasting-with-prophet?scriptVersionId=26595661.
+    - https://github.com/kolasniwash/short-term-energy-demand-forecasting
 * Rob Mulla on Kaggle for the dataset
+* Machine Learing Mastery Blog
+* Users of StackOverflow for their discussion
